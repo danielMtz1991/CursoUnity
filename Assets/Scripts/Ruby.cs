@@ -7,6 +7,7 @@ public class Ruby : MonoBehaviour
 {
     public Animator animator;
     public SpriteRenderer sprite;
+    public BoxCollider2D collider;
 
     [SerializeField]
     private float moveSpeed;
@@ -14,9 +15,11 @@ public class Ruby : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
-        
-       
+        collider = GetComponent<BoxCollider2D>();
+
+
     }
     // Update is called once per frame
     void Update()      
